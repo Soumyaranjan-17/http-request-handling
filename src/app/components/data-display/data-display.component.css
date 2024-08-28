@@ -1,0 +1,18 @@
+/* src/app/components/data-display/data-display.component.css */
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  button {
+    margin-bottom: 10px;
+  }
+  

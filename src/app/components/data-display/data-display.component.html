@@ -1,0 +1,22 @@
+<!-- src/app/components/data-display/data-display.component.html -->
+
+<div class="container">
+    <h1>Data Display</h1>
+    
+    <button (click)="sortData()">Sort Data</button>
+  
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  
+    <ul *ngIf="data.length">
+      <li *ngFor="let item of data">
+        {{ item.name }} <!-- Adjust based on your data structure -->
+      </li>
+    </ul>
+  
+    <div *ngIf="!data.length && !errorMessage">
+      Loading data...
+    </div>
+  </div>
+  
